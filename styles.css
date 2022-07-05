@@ -144,8 +144,23 @@ body {
 
 .btns-container {
     grid-column: 2/3;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
 }
 
+.btns-container button {
+    padding: .5rem 1rem;
+    background-color: #0ea5e9;
+    color: white;
+    border-radius: 20px;
+    border: none;
+    font-size: 1rem;
+    font-weight: bold;
+    width: 6rem;
+    height: 2rem;
+}
 
 
 /* Content css */
