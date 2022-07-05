@@ -6,16 +6,55 @@ body {
 
 .container {
     display: grid;
-    grid-template-columns: 1fr 5fr;
+    grid-template-columns: 1fr 6fr;
     grid-template-rows: 1fr 3fr 1fr;
     height: 100%;
 }
 
 .sidebar {
-    background-color: lightcoral;
+    background-color: #0ea5e9;
     grid-column: 1 / 2;
     grid-row: 1 / 4;
+    padding-left: 10px;
+    display: grid;
+    grid-template-rows: auto 1fr 1fr;
+    color: white;
 }
+
+.nav > div{
+  display: flex;
+  align-items: center;
+  gap: 25px;
+  height: 3em;
+}
+
+.nav > div > img {
+    height: 1.5rem;
+}
+
+.support > div {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    height: 3em; 
+}
+
+.support > div > img {
+    height: 1.5rem;
+}
+
+.logo {
+    display: flex;
+    padding-bottom: 20px;
+    align-items: center;
+    gap: 10px;
+}
+
+.logo > img {
+    height: 2.4rem;
+}
+
+
 
 .main-content {
     background-color: lightblue;
