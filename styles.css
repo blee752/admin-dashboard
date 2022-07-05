@@ -54,14 +54,6 @@ body {
     height: 2.4rem;
 }
 
-
-
-.main-content {
-    background-color:#cbd5e1;;
-    grid-column: 2/3;
-    grid-row: 2/4;
-}
-
 .header {
     background-color: white;
     grid-column: 2/3;
@@ -75,12 +67,12 @@ body {
     grid-column: 1/2;
     display: flex;
     align-items: center;
-    
+    gap: 1rem;
 }
 
 .search-container img {
-    height: 2rem;
-    width: 2rem;
+    height: 1.5rem;
+    width: 1.5rem;
 }
 
 .search-container input {
@@ -97,6 +89,24 @@ body {
 
 .profile-container {
     grid-column: 2/3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.notif-bell {
+    height: 1.5rem;
+}
+
+.user-picture {
+    max-width: 3.5rem;
+    max-height: 3.5rem;   
+    border-radius: 50px;
+}
+
+.profile-container h3 {
+    font-weight: bold;
 }
 
 .welcome-container {
@@ -105,4 +115,13 @@ body {
 
 .btns-container {
     grid-column: 2/3;
+}
+
+
+
+/* Content css */
+.main-content {
+    background-color:#cbd5e1;;
+    grid-column: 2/3;
+    grid-row: 2/4;
 }
