@@ -57,15 +57,52 @@ body {
 
 
 .main-content {
-    background-color: lightblue;
+    background-color:#cbd5e1;;
     grid-column: 2/3;
     grid-row: 2/4;
 }
 
 .header {
-    background-color: lightsalmon;
+    background-color: white;
     grid-column: 2/3;
     display: grid;
     grid-template-columns: 2fr 1fr;
     grid-template-rows: auto 1fr;
+    padding: 0.5rem 2rem;
+}
+
+.search-container {
+    grid-column: 1/2;
+    display: flex;
+    align-items: center;
+    
+}
+
+.search-container img {
+    height: 2rem;
+    width: 2rem;
+}
+
+.search-container input {
+    flex: 1;
+    border-radius: 20px;
+    border: none;
+    background-color: #e2e8f0;
+}
+
+.search-bar-input:focus {
+    outline: none;
+    border: none;
+  }
+
+.profile-container {
+    grid-column: 2/3;
+}
+
+.welcome-container {
+    grid-column: 1/2;
+}
+
+.btns-container {
+    grid-column: 2/3;
 }
