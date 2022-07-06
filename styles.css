@@ -19,6 +19,12 @@ body {
     grid-template-rows: auto auto 1fr;
     row-gap: 20px;
     color: white;
+
+    position: sticky;
+    top: 0;
+    left: 0;
+    max-height: 100vh;
+    min-height: min-content;
 }
 
 .nav>div {
@@ -181,10 +187,12 @@ body {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     grid-template-rows: auto 1fr 1fr; */
+    padding-right: 15px;
 }
 
 .articles h3 {
     grid-column: 1/-1;
+    
 }
 
 .project-container {
@@ -203,7 +211,7 @@ body {
     background-color: white;
     padding: 30px 20px 20px 20px;
     height: 6rem;
-    
+    border-radius: 5px;
 }
 
 .title {
@@ -227,4 +235,51 @@ body {
 
 li > img {
     height: 1.5rem;
+}
+
+
+.side-articles {
+    margin-right: 15px;
+    /* display: grid;
+    grid-template-rows: auto 1fr 1fr; */
+}
+
+.announcement-container {
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+.announcement-heading, .community-heading, .Policy-heading {
+    font-weight: bold;
+}
+
+.trending-profile-container {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 5px;
+}
+
+.trending-user, .app {
+    margin: 0;
+}
+
+.trending-user {
+    grid-column: 2/3;
+    grid-row: 1/2;
+    align-self: flex-end;
+}
+.app {
+    grid-column: 2/3;
+    grid-row: 2/3;
+}
+
+
+.trending-container {
+    display: grid;
+    row-gap: 10px;
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
 }
